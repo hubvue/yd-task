@@ -1,0 +1,35 @@
+{
+  "name": "book-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development supervisor app.js",
+    "docs": "jsdoc ./models/*.js -d ./docs/modeldocs",
+    "build": "babel ./assets/scripts/book/create.js --out-file ./assets/scripts/book/create-bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "cross-env": "^5.2.0",
+    "koa": "^2.7.0",
+    "koa-parser": "^1.0.6",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^5.0.0",
+    "koa-swig": "^2.2.1",
+    "lodash": "^4.17.11",
+    "log4js": "^4.0.1",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-systemjs": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "install": "^0.12.2",
+    "jsdoc": "^3.5.5"
+  }
+}
