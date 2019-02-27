@@ -1,0 +1,115 @@
+[2019-02-04T23:30:13.516] [ERROR] cheese - TypeError: Cannot read property 'id' of undefined
+    at /home/chong/桌面/book-project/controllers/BookController.js:74:67
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:198:12)
+    at /home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:21:19)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:13:23)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at serve (/home/chong/桌面/book-project/node_modules/koa-static/index.js:53:15)
+[2019-02-04T23:30:44.569] [ERROR] cheese - TypeError: Cannot read property 'id' of undefined
+    at /home/chong/桌面/book-project/controllers/BookController.js:74:67
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:198:12)
+    at /home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:21:19)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:13:23)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at serve (/home/chong/桌面/book-project/node_modules/koa-static/index.js:53:15)
+[2019-02-04T23:31:17.628] [ERROR] cheese - TypeError: Cannot read property 'id' of undefined
+    at /home/chong/桌面/book-project/controllers/BookController.js:74:42
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:198:12)
+    at /home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:21:19)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:13:23)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at serve (/home/chong/桌面/book-project/node_modules/koa-static/index.js:53:15)
+[2019-02-04T23:31:58.337] [ERROR] cheese - TypeError: Cannot read property 'id' of undefined
+    at /home/chong/桌面/book-project/controllers/BookController.js:74:42
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:198:12)
+    at /home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:21:19)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:13:23)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at serve (/home/chong/桌面/book-project/node_modules/koa-static/index.js:53:15)
+[2019-02-04T23:33:12.942] [ERROR] cheese - TypeError: Cannot read property 'id' of undefined
+    at /home/chong/桌面/book-project/controllers/BookController.js:75:42
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:186:18)
+    at Router._lookup (/home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:198:12)
+    at /home/chong/桌面/book-project/node_modules/koa-simple-router/index.js:138:21
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:21:19)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/chong/桌面/book-project/middlewares/errorHandle.js:13:23)
+    at dispatch (/home/chong/桌面/book-project/node_modules/koa-compose/index.js:42:32)
+    at serve (/home/chong/桌面/book-project/node_modules/koa-static/index.js:53:15)
+[2019-02-04T23:35:22.710] [ERROR] cheese - { FetchError: invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0
+    at /home/chong/桌面/book-project/node_modules/node-fetch/lib/index.js:241:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+  message: 'invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0',
+  type: 'invalid-json' }
+[2019-02-04T23:35:34.859] [ERROR] cheese - { FetchError: invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0
+    at /home/chong/桌面/book-project/node_modules/node-fetch/lib/index.js:241:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+  message: 'invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0',
+  type: 'invalid-json' }
+[2019-02-04T23:35:58.881] [ERROR] cheese - { FetchError: invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0
+    at /home/chong/桌面/book-project/node_modules/node-fetch/lib/index.js:241:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+  message: 'invalid json response body at http://127.0.0.1/bookadmin/web/index.php?r=book/delete reason: Unexpected token < in JSON at position 0',
+  type: 'invalid-json' }
+[2019-02-05T01:18:52.949] [ERROR] cheese - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at result.data.forEach (/home/chong/桌面/book-project/models/Book.js:112:36)
+    at Array.forEach (<anonymous>)
+    at Book.searchBook (/home/chong/桌面/book-project/models/Book.js:111:25)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-02-05T01:20:14.810] [ERROR] cheese - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at result.data.forEach (/home/chong/桌面/book-project/models/Book.js:113:36)
+    at Array.forEach (<anonymous>)
+    at Book.searchBook (/home/chong/桌面/book-project/models/Book.js:112:25)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2019-02-05T14:30:47.453] [ERROR] cheese - { FetchError: request to http://127.0.0.1/bookadmin/web/index.php?r=book/index failed, reason: connect ECONNREFUSED 127.0.0.1:80
+    at ClientRequest.<anonymous> (/home/chong/桌面/book-project/node_modules/node-fetch/lib/index.js:1444:11)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  message: 'request to http://127.0.0.1/bookadmin/web/index.php?r=book/index failed, reason: connect ECONNREFUSED 127.0.0.1:80',
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED' }
+[2019-02-05T15:11:33.720] [ERROR] cheese - { FetchError: request to http://127.0.0.1/bookadmin/web/index.php?r=book/create failed, reason: connect ECONNREFUSED 127.0.0.1:80
+    at ClientRequest.<anonymous> (/home/chong/桌面/book-project/node_modules/node-fetch/lib/index.js:1444:11)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at Socket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  message: 'request to http://127.0.0.1/bookadmin/web/index.php?r=book/create failed, reason: connect ECONNREFUSED 127.0.0.1:80',
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED' }
