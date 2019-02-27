@@ -9,7 +9,7 @@
     "docs": "jsdoc ./models/*.js -d ./docs/modeldocs",
     "build": "babel ./assets/scripts/book/create.js --out-file ./assets/scripts/book/create-bundle.js",
     "server:dev": "scripty",
-    "server:prod": "bash scripts/server/prod.sh",
+    "server:prod": "scripty",
     "server:lint": "scripty",
     "client:dev": "scripty",
     "client:prod": "scripty"

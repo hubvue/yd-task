@@ -1,2 +1,2 @@
-#webpack生产环境
-webpack --mode production
+#webpack 开发环境
+webpack --mode=production 
