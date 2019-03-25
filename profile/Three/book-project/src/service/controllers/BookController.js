@@ -7,21 +7,21 @@ class BookController{
         return async (ctx)=>{
             const result = await book.getBooks();
             
-            ctx.body = await ctx.render("book/index",{
+            ctx.body = await ctx.render("books/pages/index",{
                 data : result.data,
             });
         }
     }
     actionCreate(){
         return async (ctx)=>{
-            ctx.body = await ctx.render("book/create");
+            ctx.body = await ctx.render("books/pages/create");
         }
     }
     actionUpdate(){
         const book = new Book();
         return async (ctx) => {
             const result = await book.getBook(ctx.query.id);
-            ctx.body = await ctx.render("book/update",{
+            ctx.body = await ctx.render("books/pages/update",{
                 data : result.data,
             })
         }
@@ -30,7 +30,7 @@ class BookController{
         const book = new Book();
         return async (ctx) => {
             const result = await book.getBook(ctx.query.id);
-            ctx.body = await ctx.render("book/view",{
+            ctx.body = await ctx.render("books/pages/view",{
                 data : result.data,
             })
         }
@@ -86,7 +86,7 @@ class BookController{
                 }
             }
             const result = await book.searchBook(temp);
-            ctx.body = await ctx.render('book/index',{
+            ctx.body = await ctx.render('books/pages/index',{
                 data : result,
             })
 

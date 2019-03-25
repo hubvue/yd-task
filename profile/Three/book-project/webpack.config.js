@@ -1,6 +1,8 @@
 const argv = require('yargs-parser')(process.argv.slice(2));
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const parts = require("./config/webpack.parts");
 //参数变量
 const _mode = argv.mode || 'development';
 //按照环境require配置
@@ -21,9 +23,10 @@ let entrys =  files.reduce((target,file) => {
         target[entryKey] = file;
         const [ dist , template ] = entryKey.split('-');
         _plugins.push(new HtmlWebpackPlugin({
-            filename: `views/${dist}/${template}.html`,
+            filename: `../views/${dist}/pages/${template}.html`,
             template : `./src/web/views/${dist}/pages/${template}.html`,
             inject : false,  //禁止插入js和css
+            chunks : [entryKey]
         }))
 
     }
@@ -31,12 +34,15 @@ let entrys =  files.reduce((target,file) => {
 },{}) 
 
 //配置文件
-const config = {
+const config = merge([{
     entry : entrys,
     plugins : [
-        ..._plugins
+        ..._plugins,
+        new CleanWebpackPlugin(['./dist/assets','./dist/views','./dist/components']),
     ],
-}
+},
+parts.htmlAfterPlugin(),
+])
 
 
 module.exports = merge([

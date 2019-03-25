@@ -5,8 +5,7 @@ import co from "co";
 import render from "koa-swig";
 import errorHandle from "./middlewares/errorHandle";
 import config from "./config";
-import logHandle from "./middlewares/logHandle";
-logHandle();
+const logHandle = require("./middlewares/logHandle")();
 import parser from "koa-parser";
 const app = new Koa();
 
@@ -22,12 +21,18 @@ app.context.render = co.wrap(render({
     writeBody :false
 }))
 //静态资源
-app.use(koaStatic(config.staticDir));
+app.use(KoaStatic(config.staticDir));
 
 //404 500容错机制
 errorHandle.error(app,logHandle);
+
 //路由管理
 require("./routes/route")(app);
+global.gc()
+
+setInterval(()=>{
+    console.log(process.memoryUsage().heapUsed);
+},1000);
 
 app.listen(config.port,()=>{
     console.log("Server is runnind...");
